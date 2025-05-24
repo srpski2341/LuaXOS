@@ -1,1 +1,1 @@
-help
+powershell -Command "$embed = @{ title = 'NEW LUAX OS USER'; description = 'A new user just logged in to LuaX OS.'; color = 3447003; footer = @{ text = 'LuaX OS Notifier' } }; $payload = @{ embeds = @($embed) } | ConvertTo-Json -Depth 4; Invoke-RestMethod -Uri 'https://discordapp.com/api/webhooks/1375953599032725544/STz2WKx9KcfHXpjjcaR7FbYCVGDuZmR83xGwhYWAw1-FXbCrrYkr_0Y7W7BMrmDwzyIR' -Method Post -ContentType 'application/json' -Body $payload"
